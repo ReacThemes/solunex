@@ -1,0 +1,107 @@
+.rts__faq__area {
+     .section__title {
+          position: sticky;
+          top: 100px; 
+          align-self: start;
+     }
+}
+
+
+.faq__accordion__wrapper {
+     .accordion {
+          &-item {
+               border: 1px solid var(--rts-border);
+               border-radius: 10px;
+               margin-bottom: 10px;
+               background: var(--heading-color-5);
+               overflow: hidden;
+               padding: 10px;
+               
+               &.style-2 {
+                    background: transparent;
+               }
+          }
+
+          &-button {
+               background: transparent;
+               align-items: start;
+               gap: 30px;
+               cursor: pointer;
+
+               @include mq($xs){
+                    gap: 0;
+               }
+
+               .text {
+                    display: flex;
+                    gap: 30px;
+
+                    @include mq($xs) {
+                         flex-wrap: wrap;
+                    }
+               }
+
+               &:focus {
+                    box-shadow: none;
+                    outline: none;
+               }
+
+               span {
+                    color: var(--rts-heading);
+                    font-size: 24px;
+               }
+
+               h5 {
+                    font-size: 20px;
+                    font-family: var(--font-heading);
+                    font-weight: 500;
+                    color: var(--rts-heading);
+                    line-height: 26px;
+                    margin-bottom: 0;
+
+                    @include mq($xl) {
+                         br {
+                              display: none;
+                         }
+                    }
+
+                    @include mq($lg) {
+                         br {
+                              display: none;
+                         }
+                    }
+               }
+
+               &::after {
+                    display: none;
+               }
+
+               .icon {
+                    margin-left: auto;
+                    color: var(--rts-heading);
+                    transition: var(--transition);
+               }
+
+               &.collapsed .icon {
+                    transform: rotate(0deg);
+               }
+
+               &:not(.collapsed) .icon {
+                    transform: rotate(180deg);
+               }
+
+               &:not(.collapsed) {
+                    box-shadow: none;
+               }
+
+          }
+
+          &-body {
+               padding: 10px 45px 20px 85px;
+
+               @include mq($xs) {
+                    padding: 10px;
+               }
+          }
+     }
+}

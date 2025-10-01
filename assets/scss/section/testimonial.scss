@@ -1,0 +1,205 @@
+.rts__testimonial__area {
+     position: relative;
+
+     &::before {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 75%;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          background: var(--rts-border);
+     }
+
+     &.dbt {
+          &::before {
+               top: 0;
+               background: var(--rts-border);
+          }
+     }
+
+     &.style-3 {
+          background: #EBFFF1;
+     }
+}
+
+.testimonial__slide__item__wrapper {
+     .testimonial__slide__item {
+          padding: 28px 18px 33px 25px;
+          border: 1px solid var(--rts-border);
+          border-radius: 10px;
+
+          &.style-2 {
+               background: var(--heading-color-2);
+               border-color: transparent;
+          }
+
+          &.style-3 {
+               background: var(--heading-color-4);
+
+               .icon {
+                    img {
+                         filter: brightness(0) invert(1);
+                    }
+               }
+
+               .desc {
+                    color: var(--rts-white);
+               }
+
+               .title {
+                    color: var(--rts-white);
+               }
+               .designation {
+                    color: var(--rts-white);
+               }
+          }
+
+          .desc {
+               font-family: var(--font-roboto);
+               font-weight: 400;
+               color: var(--rts-heading);
+          }
+
+          .info {
+               .content {
+                    .title {
+                         margin-bottom: -2px;
+                    }
+               }
+          }
+     }
+}
+
+.testi__right {
+     display: flex;
+     align-items: center;
+     gap: 40px;
+     margin-bottom: 18px;
+
+     .testi__reviews {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          .rattings {
+               span {
+                    color: var(--rts-heading);
+                    font-family: var(--font-roboto);
+                    font-weight: 500;
+               }
+
+               .ratting {
+                    span {
+                         color: var(--rts-heading);
+                         font-family: var(--font-roboto);
+                         font-weight: 600;
+                    }
+
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .star {
+                         color: #ffcc00;
+                    }
+               }
+          }
+     }
+
+     .test__btn {
+          display: flex;
+          gap: 8px;
+
+          button {
+               display: block;
+               width: 44px;
+               height: 44px;
+               line-height: 44px;
+               text-align: center;
+               border: 1px solid var(--rts-border);
+               border-radius: 6px;
+               background: transparent;
+               transition: var(--transition);
+
+               i {
+                    color: var(--rts-heading);
+                    transition: var(--transition);
+               }
+
+               &:hover {
+                    background: var(--heading-color);
+
+                    i {
+                         color: var(--rts-neon);
+                    }
+               }
+          }
+
+          &.style-2 {
+               button {
+                    &:hover {
+                         i {
+                              color: var(--heading-color-4);
+                         }
+                    }
+               }
+          }
+     }
+}
+
+
+// tesimonial-2
+
+.rts__testimonials {
+     &__thumb {
+          border: 1px solid #E7EDBE;
+          border-radius: 10px;
+          padding: 20px;
+
+          .thumb {
+               img {
+                    border-radius: 10px;
+               }
+          }
+     }
+
+     &__item {
+          border: 1px solid #E7EDBE;
+          border-radius: 10px;
+          padding: 20px;
+
+
+          .content {
+               background: var(--rts-white);
+               border-radius: 10px;
+               padding: 30px 35px 48px;
+
+               .desc {
+                    font-size: 24px;
+                    line-height: 32px;
+                    color: var(--rts-para);
+                    margin-top: 22px;
+                    border-bottom: 1px solid #E7EDBE;
+                    padding-bottom: 22px;
+                    padding-bottom: 20px;
+                    margin-bottom: 20px;
+
+                    @include mq($xl){
+                         font-size: 20px;
+                    }
+
+                    @include mq($lg){
+                         font-size: 16px;
+                         line-height: 30px;
+                    }
+               }
+          }
+     }
+}
+
+
+.rts__testimonial__area.style-3::before {
+     background: none;
+}

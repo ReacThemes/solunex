@@ -1,0 +1,110 @@
+.rts__price__area {
+     background-color: var(--heading-color-3);
+
+     .price__single__item {
+          padding: 20px;
+          background-color: var(--rts-white);
+          border: 1px solid var(--rts-border);
+          border-radius: 10px;
+          transition: var(--transition);
+
+          @include mq($xl) {
+               padding: 15px;
+          }
+
+          @include mq($md){
+               padding: 19px;
+          }
+
+          .price__thumb {
+               overflow: hidden;
+               border-radius: 6px;
+               
+               img {
+                    transform: scale(1);
+                    transition: var(--transition);
+               }
+          }
+
+          .price__content {
+               padding: 20px;
+
+               @include mq($xl) {
+                    padding: 10px;
+               }
+
+
+               @include mq($md) {
+                    padding: 0;
+               }
+
+               h4 {
+                    letter-spacing: -1.6px;
+
+                    span {
+                         color: var(--rts-para);
+                         font-size: initial;
+                         letter-spacing: initial;
+                    }
+               }
+
+               p {
+                    line-height: 20px;
+                    margin-bottom: -8px;
+               }
+
+               .price__list {
+                    border-top: 1px solid var(--rts-border);
+                    padding-top: 30px;
+                    padding-bottom: 14px;
+                    margin: 30px 0 27px;
+                    padding-left: 0px;
+                    border-bottom: 1px solid var(--rts-border);
+
+                    li {
+                         margin-bottom: 10px;
+                         color: var(--heading-color);
+
+                         i {
+                              margin-right: 8px;
+                         }
+                    }
+               }
+          }
+
+          /* Price Card Button */
+          .rts__btn {
+               width: 100%;
+
+               &__wrap {
+                    width: 100%;
+                    text-align: center;
+                    padding: 16px 28px;
+               }
+
+               &__icon {
+                    min-width: 54px;
+               }
+
+               .rts__btn__txt-2 {
+                    left: 50% !important;
+                    transform: translate(-50%, 100%) !important;
+               }
+
+               &:hover .rts__btn__txt-2 {
+                    transform: translate(-50%, -50%) !important;
+                    left: 50% !important;
+               }
+
+
+          }
+
+          &:hover {
+               .price__thumb {
+                    img {
+                         transform: scale(1.1);
+                    }
+               }
+          }
+     }
+}

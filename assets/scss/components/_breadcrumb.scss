@@ -1,0 +1,44 @@
+.rts__breadcrumb {
+     &__area {
+          padding: 140px 0;
+          // height: 400px;
+
+          @include mq($xl) {
+               padding: 100px 0;
+          }
+
+          @include mq($lg) {
+               padding: 80px 0;
+          }
+
+          @include mq($md) {
+               padding: 60px 0;
+          }
+     }
+
+     &__content {
+          text-align: center;
+
+          .list {
+               padding: 8px 18px;
+               border: 1px solid rgba(255, 255, 255, 0.1);
+               border-radius: 100px;
+               display: inline-flex;
+               justify-content: center;
+               gap: 10px;
+               line-height: 1;
+
+               li,
+               a {
+                    font-size: 14px;
+                    color: var(--rts-white);
+               }
+          }
+
+          .title {
+               color: var(--rts-white);
+               margin-top: 3px;
+               margin-bottom: 0;
+          }
+     }
+}
