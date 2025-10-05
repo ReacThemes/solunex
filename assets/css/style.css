@@ -40,7 +40,6 @@ All CSS Structure Follow this Order
 29. form
 30. footer
 -------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 :root {
@@ -13669,6 +13668,7 @@ nav ul li a {
 
 .main-nav-one ul li.menu-item a.nav-link {
   padding: 28px 0 28px 20px !important;
+  font-weight: 600;
 }
 
 .main-nav-one ul li.has-dropdown a.nav-link {
