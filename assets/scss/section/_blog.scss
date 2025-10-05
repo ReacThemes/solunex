@@ -27,10 +27,16 @@
                &__top {
                     .title {
                          line-height: 26px;
+                         transition: var(--transition);
+
+                         &:hover {
+                              text-decoration: underline;
+                         }
 
                          &.style-2 {
                               line-height: 28px;
                               letter-spacing: -0.96px;
+                              text-decoration: none;
                          }
                     }
 

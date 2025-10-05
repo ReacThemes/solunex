@@ -75,6 +75,19 @@
       &.style-2 {
         gap: 70px;
 
+        @include mq($xl) {
+          gap: 15px;
+        }
+
+        @include mq($lg) {
+          gap: 10px;
+          flex-wrap: wrap;
+        }
+
+        @include mq($md) {
+          gap: 30px;
+        }
+
         @include mq($xs) {
           gap: 20px;
           flex-wrap: wrap;
@@ -102,6 +115,7 @@
           margin: 0;
           font-family: var(--font-heading);
           font-weight: 500;
+          line-height: 1;
         }
 
         .about-stats__label {
@@ -147,6 +161,9 @@
 
     .tab-content {
       .desc {
+        &.style-2 {
+          margin-top: 35px;
+        }
         p {
           line-height: 24px;
 
@@ -161,6 +178,23 @@
 
 
 // two
+
+.brb {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--rts-border);
+    bottom: -120px;
+
+    @include mq($xs) {
+      display: none;
+    }
+  }
+}
 
 .rts__about {
   &__items {
@@ -300,15 +334,24 @@
         flex-wrap: wrap;
         gap: 10px;
         padding: 0;
+
+        @include mq($sm) {
+          gap: 15px;
+        }
       }
 
       li {
         width: 48%;
 
+
         @include mq($xl) {
           &:last-child {
             flex-basis: 100%;
           }
+        }
+
+        @include mq($sm) {
+          width: auto;
         }
 
         @include mq($xs) {

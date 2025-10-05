@@ -78,3 +78,11 @@
 .map-tooltip .tooltip-arrow {
      display: none;
 }
+
+.rts__map__area .section__title p{
+     @media(max-width:1200px) and (min-width: 991px){
+          br{
+               display: none;
+          }
+     }
+}

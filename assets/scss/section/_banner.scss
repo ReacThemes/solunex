@@ -22,11 +22,7 @@
     }
 
     @include mq($lg) {
-      padding: 130px 0 130px;
-    }
-
-    @include mq($md) {
-      padding: 100px 0;
+      padding: 180px 0 100px;
     }
   }
 
@@ -48,8 +44,6 @@
       padding: 160px 0 100px;
 
     }
-
-
     .bg-images-area {
       .left {
         position: absolute;
@@ -111,7 +105,6 @@
       }
     }
   }
-
   .banner__content {
     h1 {
       color: var(--rts-white);
@@ -122,7 +115,7 @@
       margin-bottom: 40px;
 
       @include mq($md) {
-        font-size: 85px;
+        font-size: 78px;
       }
 
       @include mq($xs) {
@@ -166,6 +159,18 @@
         span {
           color: var(--rts-neon);
         }
+        @include mq($lg) {
+        }
+        @include mq($md) {
+          font-size: 72px;
+          line-height: 1;
+          br{
+            display: none;
+          }
+        }
+        @include mq($sm){
+          font-size: 56px;
+        }
 
         @include mq($xs) {
           font-size: 50px;
@@ -175,9 +180,19 @@
         @include mq($xss) {
           font-size: 40px;
         }
+        
 
         &.style-3 {
           margin: 20px 0;
+          font-size: 80px;
+          line-height: 80px;
+          letter-spacing: -3.2px;
+
+          @include mq($sm) {
+            br {
+              display: none;
+            }
+          }
         }
 
       }
@@ -190,38 +205,31 @@
 
 
   }
-
   .banner__card__main {
     position: absolute;
     right: 115px;
     bottom: 86px;
+    @media(max-width:1600px){
+      right: 25px;
+    }
 
     &.style-2 {
+      position: absolute;
       right: 100px;
       bottom: 86px;
 
-      @include mq($xl) {
-        right: unset;
-        bottom: unset;
-      }
-
       @include mq($lg) {
+        position: unset;
         right: unset;
         bottom: unset;
       }
-    }
-
-    @include mq($xxl) {
-      right: 20px;
-      right: unset;
-      bottom: unset;
     }
 
     @include mq($xl) {
-      margin-top: 40px;
-      position: relative;
+      position: unset;
       right: unset;
       bottom: unset;
+      margin-top: 50px;
     }
 
     @include mq($lg) {
@@ -267,17 +275,27 @@
       display: flex;
       align-items: center;
       gap: 24px;
+      max-width: 560px;
 
       &.style-2 {
         margin-top: 90px;
+        max-width: 445px;
+        @include mq($xl) {
+          margin-top: 30px;
+        }
       }
 
       @include mq($xs) {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: start;
       }
 
       .thumb {
         flex-basis: 40%;
+
+        @include mq($xs) {
+          width: 100%;
+        }
 
         img {
           border-radius: 6px;
@@ -367,6 +385,35 @@
           }
         }
       }
+    }
+  }
+  &.video-banner{
+    z-index: 1;
+    video{
+      position: absolute;
+      z-index: -2;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      backface-visibility: hidden;
+      will-change: transform;
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      background: rgba( #23821000, $alpha: .5);
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      mix-blend-mode: normal;
+      transform: translateZ(0);
+      will-change: opacity;      
     }
   }
 }

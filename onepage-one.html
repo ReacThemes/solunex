@@ -31,7 +31,7 @@
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
 </head>
 
-<body class="overflow-x-visible">
+<body class="overflow-x-visible onepage">
     <!-- top header area -->
     <div class="header__top">
         <ul class="top__left">
@@ -62,100 +62,14 @@
             </div>
             <div class="main__menu">
                 <div class="rts__main__menu d-none d-lg-block">
-                    <!-- <nav class="mobile__menu__active">
-        <ul>
-            <li class="has-dropdown">
-                <a href="/">Home</a>
-                <ul class="sub-menu">
-                    <li><a href="/index.html">Home One</a></li>
-                    <li><a href="/index-two.html">Home Two</a></li>
-                    <li><a href="/index-three.html">Home Three</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About us</a></li>
-            <li class="has-dropdown">
-                <a href="#">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="service-details.html">Services Details</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                    <li><a href="project.html">project</a></li>
-                    <li><a href="project-details.html">project-details</a></li>
-                    <li><a href="team.html">team</a></li>
-                    <li><a href="team-details.html">team details</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="faq.html">faq</a></li>
-                </ul>
-            </li>
-
-            <li class="has-dropdown">
-                <a href="#">Blog</a>
-                <ul class="sub-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog details</a></li>
-                </ul>
-            </li>
-
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> -->
-
                     <div class="header-nav main-nav-one">
                         <nav>
                             <ul>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                    <ul class="submenu">
-                                        <li class="sub-dropdown">
-                                            <a class="tag" href="javascript:void(0);">Multipages</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a class="mobile-menu-link" href="index.html">Wind Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-two.html">Solar Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-three.html">Renewable Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-four.html">Video Demo</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-dropdown">
-                                            <a class="tag" href="javascript:void(0);">One Pages</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a class="mobile-menu-link" href="onepage-one.html">One Page One</a></li>
-                                                <li><a class="mobile-menu-link" href="onepage-two.html">One Page two</a></li>
-                                                <li><a class="mobile-menu-link" href="onepage-three.html">One Page three</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                    <ul class="submenu">
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="service-details.html">Service Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Pages</a>
-                                    <ul class="submenu">
-                                        <li><a href="project.html">Project</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="team-details.html">Team Details</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                    <ul class="submenu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#home">Home</a></li>
+                                <li class="menu-item"><a class="nav-link" href="#about">About Us</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#service">Services</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#project">Projects</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#blog">Blog</a> </li>
                             </ul>
                         </nav>
                     </div>
@@ -175,7 +89,7 @@
     <!-- main header area end -->
 
     <!-- rts banner area -->
-    <div class="rts__banner__area" data-bg-src="assets/images/banner/1.webp">
+    <div id="home" class="rts__banner__area" data-bg-src="assets/images/banner/1.webp">
         <div class="container-fluid">
             <div class="banner__content">
                 <h1 class="wow fadeInUp" data-wow-delay=".2s">Powering the <br> Future with Wind</h1>
@@ -197,7 +111,7 @@
                 </div>
                 <div class="banner__card_box mt-40 wow fadeInUp" data-wow-delay=".4s">
                     <div class="thumb ">
-                        <img src="assets/images/banner/card-thumb.webp" alt="img">
+                        <img src="assets/images/banner/card-thumb.jpg" alt="img">
                     </div>
                     <div class="txt">
                         <h3>20%</h3>
@@ -228,7 +142,7 @@
     <!-- rts banner area end -->
 
     <!-- rts about area -->
-    <div class="rts__about__area section-padding">
+    <div id="about" class="rts__about__area section-padding">
         <div class="container">
             <div class="row gy-5">
                 <div class="col-lg-6">
@@ -374,7 +288,7 @@
     <!-- rts brand area end -->
 
     <!-- rts service area -->
-    <div class="rts__service_area pt-120">
+    <div id="service" class="rts__service_area pt-120">
         <div class="container-fluid">
             <div class="service__wrapper bg-light-lime ">
                 <div class="row align-items-xl-center">
@@ -493,7 +407,7 @@
     <!-- rts service area end -->
 
     <!-- rts project area -->
-    <div class="rts__project__area section-padding">
+    <div id="project" class="rts__project__area section-padding">
         <div class="container">
             <div class="section__title text-center">
                 <span class="sub-title wow fadeInUp" data-wow-delay=".2s">Our Project</span>
@@ -966,7 +880,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">They brought clarity to complex challenges data-backed solutions insights completely reshaped our positioning strategy.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-2.svg" alt="testimonial">
@@ -983,7 +898,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">From financial planning to brand positioning, they guided us at every step. It felt like having an internal team that actually cared.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-3.svg" alt="testimonial">
@@ -1000,7 +916,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">Excellent communication and a strong grip on business consulting. Their strategies helped us cut costs and boost efficiency.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-4.svg" alt="testimonial">
@@ -1017,14 +934,15 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">From financial planning to brand positioning, they guided us at every step. It felt like having an internal team that actually cared.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
-                                        <img src="assets/images/testimonial/t-3.svg" alt="testimonial">
+                                        <img src="assets/images/testimonial/t-1.svg" alt="testimonial">
                                     </div>
                                     <div class="content">
                                         <h6 class="title">Sarah Williams</h6>
-                                        <span class="designation">Marketing Director</span>
+                                        <span class="designation">CEO of Finbiz</span>
                                     </div>
                                 </div>
                             </div>
@@ -1034,14 +952,15 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">Excellent communication and a strong grip on business consulting. Their strategies helped us cut costs and boost efficiency.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
-                                        <img src="assets/images/testimonial/t-4.svg" alt="testimonial">
+                                        <img src="assets/images/testimonial/t-2.svg" alt="testimonial">
                                     </div>
                                     <div class="content">
-                                        <h6 class="title">Ethan Patel</h6>
-                                        <span class="designation">CEO, SwiftLogix</span>
+                                        <h6 class="title">James Carter</h6>
+                                        <span class="designation">NovaTech Solutions</span>
                                     </div>
                                 </div>
                             </div>
@@ -1208,7 +1127,7 @@
     <!-- rts team area end -->
 
     <!-- rts blog area -->
-    <div class="rts__blog__area section-padding">
+    <div id="blog" class="rts__blog__area section-padding">
         <div class="container">
             <div class="section__title text-center">
                 <span class="sub-title wow fadeInUp" data-wow-delay=".2s">Blog & News</span>
@@ -1367,7 +1286,7 @@
                     </button>
                 </form>
             </div>
-            <div class="footer__widget__wrapper bdr-line">
+            <div class="footer__widget__wrapper">
                 <div class="row g-5">
                     <div class="col-xl-2 col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
                         <div class="footer__widget__logo">
@@ -1449,43 +1368,11 @@
 
             <div class="rts__offcanvas__mobile__menu">
                 <ul>
-                    <li class="has-dropdown">
-                        <a href="index.html">Home<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="/index.html">Wind Energy</a></li>
-                            <li><a href="/index-two.html">Solar Energy</a></li>
-                            <li><a href="/index-three.html">Renewable Energy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About us</a></li>
-                    <li class="has-dropdown">
-                        <a href="#">Services<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="service-details.html">Services Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">Pages<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="project.html">project</a></li>
-                            <li><a href="project-details.html">project-details</a></li>
-                            <li><a href="team.html">team</a></li>
-                            <li><a href="team-details.html">team details</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faq.html">faq</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has-dropdown">
-                        <a href="#">Blog<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="#home">Home</a> </li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Services</a> </li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li> <a href="#blog">Blog</a></li>
                 </ul>
             </div>
 
@@ -1499,6 +1386,8 @@
             </div>
         </div>
     </div>
+
+    <div class="rts__offcanvas__overlay"></div>
 
     <div class="rts__offcanvas__overlay"></div>
     <!-- <div id="de-loader"></div> -->

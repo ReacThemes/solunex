@@ -53,7 +53,7 @@
   &__wrap {
     position: relative;
     display: inline-block;
-    padding: 19px 30px;
+    padding: 18px 30px;
     border-radius: 100px;
     background: var(--heading-color-2);
     color: var(--rts-heading);
@@ -64,6 +64,7 @@
     }
 
     &.style-2 {
+      padding:19px 30px;
       background: var(--heading-color);
       color: var(--rts-white);
     }
@@ -228,4 +229,8 @@
   cursor: pointer;
   color: var(--heading-color);
   font-weight: 500;
+}
+
+.header-two .menu__btn{
+  color: var(--rts-white);
 }

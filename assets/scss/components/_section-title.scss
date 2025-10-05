@@ -104,12 +104,6 @@
                     display: none;
                }
           }
-
-          @include mq($md){
-               br {
-                    display: none;
-               }
-          }
      }
 
      &.style-2 {

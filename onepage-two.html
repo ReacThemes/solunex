@@ -31,109 +31,23 @@
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
 </head>
 
-<body class="overflow-x-visible">
+<body class="overflow-x-visible onepage">
     <!-- main header area -->
     <header class="rts__main__header header__function header-two">
         <div class="main__left">
             <div class="logo">
-                <a href="index-two.html"><img src="assets/images/logo/logo-white.svg" alt="logo"></a>
+                <a href="index.html"><img src="assets/images/logo/logo-white.svg" alt="logo"></a>
             </div>
             <div class="main__menu">
                 <div class="rts__main__menu d-none d-lg-block">
-                    <!-- <nav class="mobile__menu__active">
-        <ul>
-            <li class="has-dropdown">
-                <a href="/">Home</a>
-                <ul class="sub-menu">
-                    <li><a href="/index.html">Home One</a></li>
-                    <li><a href="/index-two.html">Home Two</a></li>
-                    <li><a href="/index-three.html">Home Three</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About us</a></li>
-            <li class="has-dropdown">
-                <a href="#">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="service-details.html">Services Details</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                    <li><a href="project.html">project</a></li>
-                    <li><a href="project-details.html">project-details</a></li>
-                    <li><a href="team.html">team</a></li>
-                    <li><a href="team-details.html">team details</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="faq.html">faq</a></li>
-                </ul>
-            </li>
-
-            <li class="has-dropdown">
-                <a href="#">Blog</a>
-                <ul class="sub-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog details</a></li>
-                </ul>
-            </li>
-
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> -->
-
                     <div class="header-nav main-nav-one">
                         <nav>
                             <ul>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Home</a>
-                                    <ul class="submenu">
-                                        <li class="sub-dropdown">
-                                            <a class="tag" href="javascript:void(0);">Multipages</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a class="mobile-menu-link" href="index.html">Wind Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-two.html">Solar Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-three.html">Renewable Energy</a></li>
-                                                <li><a class="mobile-menu-link" href="index-four.html">Video Demo</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="sub-dropdown">
-                                            <a class="tag" href="javascript:void(0);">One Pages</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a class="mobile-menu-link" href="onepage-one.html">One Page One</a></li>
-                                                <li><a class="mobile-menu-link" href="onepage-two.html">One Page two</a></li>
-                                                <li><a class="mobile-menu-link" href="onepage-three.html">One Page three</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Services</a>
-                                    <ul class="submenu">
-                                        <li><a href="service.html">Service</a></li>
-                                        <li><a href="service-details.html">Service Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Pages</a>
-                                    <ul class="submenu">
-                                        <li><a href="project.html">Project</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="team-details.html">Team Details</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                    </ul>
-                                </li>
-                                <li class="has-dropdown menu-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                    <ul class="submenu">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#home">Home</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#service">Services</a></li>
+                                <li class="menu-item"><a class="nav-link" href="#about">About Us</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#project">Projects</a></li>
+                                <li class="menu-item"> <a class="nav-link" href="#blog">Blog</a> </li>
                             </ul>
                         </nav>
                     </div>
@@ -153,7 +67,7 @@
     <!-- main header area end -->
 
     <!-- rts banner area two -->
-    <div class="rts__banner__area x-hidden style-2" data-bg-src="assets/images/banner/2.webp">
+    <div id="home" class="rts__banner__area x-hidden style-2" data-bg-src="assets/images/banner/2.webp">
         <div class="container-fluid">
             <div class="banner__content style-2">
                 <span class="subTitle wow fadeInUp" data-wow-delay=".2s">Power Your Life with the Sun</span>
@@ -197,7 +111,7 @@
     <!-- rts banner area end -->
 
     <!-- rts service area two -->
-    <div class="rts__service_area pt-120">
+    <div id="service" class="rts__service_area pt-120">
         <div class="container">
             <div class="service__wrapper style-2">
                 <div class="row gy-5 g-xl-2">
@@ -298,7 +212,7 @@
     <!-- rts service area end -->
 
     <!-- rts about area two -->
-    <div class="rts__about__area section-padding">
+    <div id="about" class="rts__about__area section-padding">
         <div class="container">
             <div class="section__title text-center">
                 <span class="sub-title wow fadeInUp" data-wow-delay=".2s">About Company</span>
@@ -360,7 +274,7 @@
                                 </div>
                                 <div class="tab-content mt-20" id="content-nav-tabs">
                                     <div class="tab-pane show active" id="nav-mission" role="tabpanel" aria-labelledby="mission-tab" tabindex="0">
-                                        <div class="desc style-2 wow fadeInUp" data-wow-delay=".9s">
+                                        <div class="desc wow fadeInUp" data-wow-delay=".9s">
                                             <p>To provide affordable, reliable,
                                                 and
                                                 eco-friendly solar solutions that empower homes and businesses to save
@@ -478,7 +392,7 @@
     <!-- rts map area end -->
 
     <!-- rts project area two -->
-    <div class="rts__project__area section-padding bg-light-lime">
+    <div id="project" class="rts__project__area section-padding bg-light-lime">
         <div class="container">
             <div class="section__title text-center">
                 <h3 class="title style-4 wow fadeInUp " data-wow-delay=".2s">Our Project</h3>
@@ -959,7 +873,7 @@
     <!-- rts testimonial area end -->
 
     <!-- rts blog area tow -->
-    <div class="rts__blog__area section-padding bg-white">
+    <div id="blog" class="rts__blog__area section-padding bg-white">
         <div class="container">
             <div class="section__title text-center">
                 <span class="sub-title wow fadeInUp" data-wow-delay=".2s">Blog & News</span>
@@ -1071,7 +985,7 @@
                             <div class="content">
                                 <div class="content__top">
                                     <a href="blog-details.html">
-                                        <h5 class="title style-2">Top 5 Benefits of Installing Solar Panels at Home</h5>
+                                        <h5 class="title">Top 5 Benefits of Installing Solar Panels at Home</h5>
                                     </a>
                                     <p class="desc">A simple rectangular base placed to add visual structure and
                                         emphasis...</p>
@@ -1208,43 +1122,11 @@
 
             <div class="rts__offcanvas__mobile__menu">
                 <ul>
-                    <li class="has-dropdown">
-                        <a href="index.html">Home<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="/index.html">Wind Energy</a></li>
-                            <li><a href="/index-two.html">Solar Energy</a></li>
-                            <li><a href="/index-three.html">Renewable Energy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About us</a></li>
-                    <li class="has-dropdown">
-                        <a href="#">Services<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="service-details.html">Services Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">Pages<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="project.html">project</a></li>
-                            <li><a href="project-details.html">project-details</a></li>
-                            <li><a href="team.html">team</a></li>
-                            <li><a href="team-details.html">team details</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faq.html">faq</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has-dropdown">
-                        <a href="#">Blog<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="#home">Home</a> </li>
+                    <li><a href="#service">Services</a> </li>
+                    <li><a href="#about">About us</a></li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li> <a href="#blog">Blog</a></li>
                 </ul>
             </div>
 

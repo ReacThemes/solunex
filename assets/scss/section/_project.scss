@@ -163,7 +163,7 @@
                     padding: 20px;
                     position: absolute;
                     bottom: 0;
-                    right: -45%;
+                    right: -100%;
                     transition: all .5s;
 
                     &.style-2 {
@@ -259,7 +259,7 @@
      display: flex;
      justify-content: space-between;
 
-     @include mq($lg) {
+     @include mq($md) {
           flex-direction: column;
           gap: 20px;
      }
@@ -367,7 +367,7 @@
                                    transform: translateY(-50%);
                                    left: -14px;
 
-                                   @include mq($xs){
+                                   @include mq($xs) {
                                         top: 13px;
                                    }
                               }
@@ -383,16 +383,20 @@
           &__info {
                margin-top: 83px;
                margin-left: 50px;
+               position: sticky;
+               top: 100px;
 
-               @include mq($lg){
+
+               @include mq($lg) {
                     margin-left: 20px;
                }
-               @include mq($md){
+
+               @include mq($md) {
                     margin-left: 0;
                }
 
-               p{
-                    span{
+               p {
+                    span {
                          color: var(--heading-color);
                     }
 

@@ -31,7 +31,7 @@
     <link rel="stylesheet preload" href="assets/css/style.css" as="style">
 </head>
 
-<body class="overflow-x-visible">
+<body class="overflow-x-visible onepage">
     <!-- top header area -->
     <div class="header__top header__three">
         <ul class="top__left">
@@ -60,100 +60,14 @@
                 </div>
                 <div class="main__menu">
                     <div class="rts__main__menu d-none d-lg-block">
-                        <!-- <nav class="mobile__menu__active">
-        <ul>
-            <li class="has-dropdown">
-                <a href="/">Home</a>
-                <ul class="sub-menu">
-                    <li><a href="/index.html">Home One</a></li>
-                    <li><a href="/index-two.html">Home Two</a></li>
-                    <li><a href="/index-three.html">Home Three</a></li>
-                </ul>
-            </li>
-            <li><a href="about.html">About us</a></li>
-            <li class="has-dropdown">
-                <a href="#">Services</a>
-                <ul class="sub-menu">
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="service-details.html">Services Details</a></li>
-                </ul>
-            </li>
-            <li class="has-dropdown">
-                <a href="#">Pages</a>
-                <ul class="sub-menu">
-                    <li><a href="project.html">project</a></li>
-                    <li><a href="project-details.html">project-details</a></li>
-                    <li><a href="team.html">team</a></li>
-                    <li><a href="team-details.html">team details</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="faq.html">faq</a></li>
-                </ul>
-            </li>
-
-            <li class="has-dropdown">
-                <a href="#">Blog</a>
-                <ul class="sub-menu">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog-details.html">Blog details</a></li>
-                </ul>
-            </li>
-
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav> -->
-
                         <div class="header-nav main-nav-one">
                             <nav>
                                 <ul>
-                                    <li class="has-dropdown menu-item">
-                                        <a class="nav-link" href="#">Home</a>
-                                        <ul class="submenu">
-                                            <li class="sub-dropdown">
-                                                <a class="tag" href="javascript:void(0);">Multipages</a>
-                                                <ul class="submenu third-lvl base">
-                                                    <li><a class="mobile-menu-link" href="index.html">Wind Energy</a></li>
-                                                    <li><a class="mobile-menu-link" href="index-two.html">Solar Energy</a></li>
-                                                    <li><a class="mobile-menu-link" href="index-three.html">Renewable Energy</a></li>
-                                                    <li><a class="mobile-menu-link" href="index-four.html">Video Demo</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="sub-dropdown">
-                                                <a class="tag" href="javascript:void(0);">One Pages</a>
-                                                <ul class="submenu third-lvl base">
-                                                    <li><a class="mobile-menu-link" href="onepage-one.html">One Page One</a></li>
-                                                    <li><a class="mobile-menu-link" href="onepage-two.html">One Page two</a></li>
-                                                    <li><a class="mobile-menu-link" href="onepage-three.html">One Page three</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a class="nav-link" href="about.html">About Us</a></li>
-                                    <li class="has-dropdown menu-item">
-                                        <a class="nav-link" href="#">Services</a>
-                                        <ul class="submenu">
-                                            <li><a href="service.html">Service</a></li>
-                                            <li><a href="service-details.html">Service Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-dropdown menu-item">
-                                        <a class="nav-link" href="#">Pages</a>
-                                        <ul class="submenu">
-                                            <li><a href="project.html">Project</a></li>
-                                            <li><a href="project-details.html">Project Details</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="team-details.html">Team Details</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-dropdown menu-item">
-                                        <a class="nav-link" href="#">Blog</a>
-                                        <ul class="submenu">
-                                            <li><a href="blog.html">Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                    <li class="menu-item"> <a class="nav-link" href="#home">Home</a></li>
+                                    <li class="menu-item"><a class="nav-link" href="#about">About Us</a></li>
+                                    <li class="menu-item"> <a class="nav-link" href="#service">Services</a></li>
+                                    <li class="menu-item"> <a class="nav-link" href="#project">Projects</a></li>
+                                    <li class="menu-item"> <a class="nav-link" href="#blog">Blog</a> </li>
                                 </ul>
                             </nav>
                         </div>
@@ -174,7 +88,7 @@
     <!-- main header area end -->
 
     <!-- rts banner area three -->
-    <div class="rts__banner__area style-3">
+    <div id="home" class="rts__banner__area style-3">
         <div class="container-fluid style-2">
             <div class="banner__content style-2">
                 <span class="subTitle style-3 wow fadeInUp" data-wow-delay=".2s">Power Your Life with the Sun</span>
@@ -206,7 +120,7 @@
     <!-- rts banner area end -->
 
     <!-- rts about area three -->
-    <div class="rts__about__area section-padding">
+    <div id="about" class="rts__about__area section-padding">
         <div class="container">
             <div class="rts__about__wrapper">
                 <div class="row gy-5">
@@ -273,7 +187,7 @@
     <!-- rts about area end -->
 
     <!-- rts service area three -->
-    <div class="rts__service_area section-padding style-3">
+    <div id="service" class="rts__service_area section-padding style-3">
         <div class="container">
             <div class="section__title text-center">
                 <span class="sub-title wow fadeInUp" data-wow-delay=".2s">Our Services</span>
@@ -533,7 +447,7 @@
     <!-- rts choose area end -->
 
     <!-- rts project area three -->
-    <div class="rts__project__area section-padding bg-green">
+    <div id="project" class="rts__project__area section-padding bg-green">
         <div class="container">
             <div class="title__area">
                 <span class="subtitles wow fadeInUp" data-wow-delay=".2s">Our Project</span>
@@ -831,7 +745,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">They brought clarity to complex challenges data-backed solutions insights completely reshaped our positioning strategy.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-2.svg" alt="testimonial">
@@ -848,7 +763,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">From financial planning to brand positioning, they guided us at every step. It felt like having an internal team that actually cared.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-3.svg" alt="testimonial">
@@ -865,7 +781,8 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">Excellent communication and a strong grip on business consulting. Their strategies helped us cut costs and boost efficiency.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
                                         <img src="assets/images/testimonial/t-4.svg" alt="testimonial">
@@ -882,14 +799,15 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">From financial planning to brand positioning, they guided us at every step. It felt like having an internal team that actually cared.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
-                                        <img src="assets/images/testimonial/t-3.svg" alt="testimonial">
+                                        <img src="assets/images/testimonial/t-1.svg" alt="testimonial">
                                     </div>
                                     <div class="content">
                                         <h6 class="title">Sarah Williams</h6>
-                                        <span class="designation">Marketing Director</span>
+                                        <span class="designation">CEO of Finbiz</span>
                                     </div>
                                 </div>
                             </div>
@@ -899,14 +817,15 @@
                                 <div class="icon mb-10">
                                     <img src="assets/images/icon/quotes.svg" alt="">
                                 </div>
-                                <p class="desc mb-20">Excellent communication and a strong grip on business consulting. Their strategies helped us cut costs and boost efficiency.</p>
+                                <p class="desc mb-20">I've worked with many agencies before, but this one really stood
+                                    out. It wasn't just about the visuals they understood our business.</p>
                                 <div class="info d-flex gap-3 align-items-center">
                                     <div class="thumb">
-                                        <img src="assets/images/testimonial/t-4.svg" alt="testimonial">
+                                        <img src="assets/images/testimonial/t-2.svg" alt="testimonial">
                                     </div>
                                     <div class="content">
-                                        <h6 class="title">Ethan Patel</h6>
-                                        <span class="designation">CEO, SwiftLogix</span>
+                                        <h6 class="title">James Carter</h6>
+                                        <span class="designation">NovaTech Solutions</span>
                                     </div>
                                 </div>
                             </div>
@@ -1125,7 +1044,7 @@
     <!-- rts faq area end -->
 
     <!-- rts brand area three -->
-    <div class="rts__brand__area section-padding pt-0 ">
+    <div class="rts__brand__area ">
         <div class="container">
             <div class="brand__slide__wrapper style-3">
                 <div class="swiper brand__slider">
@@ -1172,6 +1091,148 @@
         </div>
     </div>
     <!-- rts brand area end -->
+
+    <!-- rts blog area tow -->
+    <div id="blog" class="rts__blog__area section-padding bg-white">
+        <div class="container">
+            <div class="section__title text-center">
+                <span class="sub-title wow fadeInUp" data-wow-delay=".2s">Blog & News</span>
+                <h3 class="title wow fadeInUp" data-wow-delay=".4s">Latest Insights & Updates</h3>
+            </div>
+            <div class="blog__items__wrapper">
+                <div class="row">
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="blog__single__item style-2 mt-30">
+                            <div class="thumb">
+                                <a href="blog-details.html"><img src="assets/images/blog/5.webp" alt=""></a>
+                            </div>
+                            <div class="content">
+                                <div class="content__top">
+                                    <a href="blog-details.html">
+                                        <h5 class="title style-2">Solar Innovations: The Latest Trends in Renewable
+                                            Energy</h5>
+                                    </a>
+                                    <p class="desc">A simple rectangular base placed to add visual structure and
+                                        emphasis...</p>
+                                </div>
+                                <div class="content__bottom style-2">
+                                    <a href="blog-details.html" class="rts__btn">
+                                        <div class="rts__btn__wrap style-3 btn-sm">
+                                            <span class="rts__btn__txt-1">Learn More</span>
+                                            <span class="rts__btn__txt-2">Learn More</span>
+                                        </div>
+                                        <div class="rts__btn__icon style-3 btn-sm">
+                                            <span class="rts__btn__icon-1"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="rts__btn__icon-2"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                    <span>11 Feb, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="blog__single__item style-2 mt-30">
+                            <div class="thumb">
+                                <a href="blog-details.html"><img src="assets/images/blog/6.webp" alt=""></a>
+                            </div>
+                            <div class="content">
+                                <div class="content__top">
+                                    <a href="blog-details.html">
+                                        <h5 class="title style-2">How Solar Energy is Powering the Future of Clean
+                                            Living</h5>
+                                    </a>
+                                    <p class="desc">A simple rectangular base placed to add visual structure and
+                                        emphasis...</p>
+                                </div>
+                                <div class="content__bottom style-2">
+                                    <a href="blog-details.html" class="rts__btn">
+                                        <div class="rts__btn__wrap style-3 btn-sm">
+                                            <span class="rts__btn__txt-1">Learn More</span>
+                                            <span class="rts__btn__txt-2">Learn More</span>
+                                        </div>
+                                        <div class="rts__btn__icon style-3 btn-sm">
+                                            <span class="rts__btn__icon-1"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="rts__btn__icon-2"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                    <span>12 Jul, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="blog__single__item style-2 mt-30">
+                            <div class="thumb">
+                                <a href="blog-details.html"><img src="assets/images/blog/7.webp" alt=""></a>
+                            </div>
+                            <div class="content">
+                                <div class="content__top">
+                                    <a href="blog-details.html">
+                                        <h5 class="title style-2">The Rise of Solar Farms: A Step Towards Green Planet
+                                        </h5>
+                                    </a>
+                                    <p class="desc">A simple rectangular base placed to add visual structure and
+                                        emphasis...</p>
+                                </div>
+                                <div class="content__bottom style-2">
+                                    <a href="blog-details.html" class="rts__btn">
+                                        <div class="rts__btn__wrap style-3 btn-sm">
+                                            <span class="rts__btn__txt-1">Learn More</span>
+                                            <span class="rts__btn__txt-2">Learn More</span>
+                                        </div>
+                                        <div class="rts__btn__icon style-3 btn-sm">
+                                            <span class="rts__btn__icon-1"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="rts__btn__icon-2"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                    <span>24 Apr, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                        <div class="blog__single__item style-2 mt-30">
+                            <div class="thumb">
+                                <a href="blog-details.html"><img src="assets/images/blog/8.webp" alt=""></a>
+                            </div>
+                            <div class="content">
+                                <div class="content__top">
+                                    <a href="blog-details.html">
+                                        <h5 class="title">Top 5 Benefits of Installing Solar Panels at Home</h5>
+                                    </a>
+                                    <p class="desc">A simple rectangular base placed to add visual structure and
+                                        emphasis...</p>
+                                </div>
+                                <div class="content__bottom style-2">
+                                    <a href="blog-details.html" class="rts__btn">
+                                        <div class="rts__btn__wrap style-3 btn-sm">
+                                            <span class="rts__btn__txt-1">Learn More</span>
+                                            <span class="rts__btn__txt-2">Learn More</span>
+                                        </div>
+                                        <div class="rts__btn__icon style-3 btn-sm">
+                                            <span class="rts__btn__icon-1"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                            <span class="rts__btn__icon-2"><i
+                                                    class="fa-solid fa-arrow-right"></i></span>
+                                        </div>
+                                    </a>
+                                    <span>01 Aug, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rts blog area end -->
 
     <!-- rts cta area three -->
     <div class="rts__cta__area style-3">
@@ -1313,43 +1374,11 @@
 
             <div class="rts__offcanvas__mobile__menu">
                 <ul>
-                    <li class="has-dropdown">
-                        <a href="index.html">Home<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="/index.html">Wind Energy</a></li>
-                            <li><a href="/index-two.html">Solar Energy</a></li>
-                            <li><a href="/index-three.html">Renewable Energy</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="about.html">About us</a></li>
-                    <li class="has-dropdown">
-                        <a href="#">Services<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="service-details.html">Services Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-dropdown">
-                        <a href="#">Pages<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="project.html">project</a></li>
-                            <li><a href="project-details.html">project-details</a></li>
-                            <li><a href="team.html">team</a></li>
-                            <li><a href="team-details.html">team details</a></li>
-                            <li><a href="pricing.html">Pricing</a></li>
-                            <li><a href="faq.html">faq</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has-dropdown">
-                        <a href="#">Blog<span class="chevron"><i class="fas fa-chevron-right"></i></span></a>
-                        <ul class="sub-menu" style="display: none;">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="blog-details.html">Blog details</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="contact.html">Contact</a></li>
+                    <li> <a href="#home">Home</a> </li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#service">Services</a> </li>
+                    <li> <a href="#project">Projects</a></li>
+                    <li> <a href="#blog">Blog</a></li>
                 </ul>
             </div>
 

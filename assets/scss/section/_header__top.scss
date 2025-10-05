@@ -6,7 +6,7 @@
     position: relative;
 
     @include mq($lg) {
-        padding: 8px 50px;
+        padding: 8px 30px;
     }
 
     @include mq($md) {

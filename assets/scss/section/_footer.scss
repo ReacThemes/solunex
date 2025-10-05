@@ -11,7 +11,7 @@
                background: rgba(255, 255, 255, 0.1);
                bottom: 65px;
 
-               @include mq($xs) {
+               @include mq($sm) {
                     bottom: 100px;
                }
           }
@@ -79,6 +79,27 @@
           &__wrapper {
                padding-top: 50px;
                border-top: 1px solid rgba(223, 255, 3, 0.1);
+
+               &.bdr-line {
+                    position: relative;
+
+                    &::before {
+                         position: absolute;
+                         content: '';
+                         height: 160px;
+                         width: 1px;
+                         background: rgba(223, 255, 3, 0.1);
+                         left: 53%;
+
+                         @include mq($lg) {
+                              left: 48.5%;
+                         }
+
+                         @include mq($md){
+                              display: none;
+                         }
+                    }
+               }
 
                &.style-2 {
                     padding-top: 110px;
@@ -372,10 +393,22 @@
 
           &.style-2 {
                border-color: #15403F;
+
+               @include mq($sm) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+               }
           }
 
           &.style-3 {
                border-color: transparent;
+
+               @include mq($sm) {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 10px;
+               }
 
                @include mq($xs) {
                     margin-top: 40px;
@@ -410,9 +443,10 @@
                display: flex;
                gap: 70px;
                margin: 0;
+               padding: 0;
+
 
                @include mq($xs) {
-                    padding: 0;
                     flex-wrap: wrap;
                     gap: 40px;
                }

@@ -320,6 +320,11 @@
           e.preventDefault();
           $('.rts__offcanvas, .rts__offcanvas__overlay').removeClass('active');
         });
+        // ===== Offcanvas close (X button or overlay) =====
+        $(document).on('click', '.onepage .rts__offcanvas__mobile__menu ul li a ', function (e) {
+          e.preventDefault();
+          $('.rts__offcanvas, .rts__offcanvas__overlay').removeClass('active');
+        });
 
         console.log('✅ Mobile menu initialized successfully');
       } catch (error) {
@@ -349,9 +354,7 @@
       }
     },
     preloader: function (e) {
-      window.addEventListener('load', function () {
-        document.querySelector('body').classList.add('loaded');
-      });
+      $('#de-loader').prepend($('<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>'));
     },
     odoMeter: function () {
       $(document).ready(function () {

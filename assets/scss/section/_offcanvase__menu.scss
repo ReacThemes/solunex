@@ -55,7 +55,6 @@
   &__mobile__menu {
     margin-top: 60px;
 
-    nav {
       ul {
         padding: 0;
         margin: 0;
@@ -79,16 +78,12 @@
             text-transform: capitalize;
             transition: var(--transition);
 
-            &:hover {
-              color: var(--rts-neon);
-            }
-
             span.chevron {
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 24px;
-              height: 24px;
+              width: 35px;
+              height: 35px;
               background: var(--heading-color);
               margin-left: 10px;
 
@@ -97,12 +92,13 @@
                 font-size: 12px;
                 font-weight: 900;
                 transition: transform 0.3s ease;
+                transform: rotate(90deg);
               }
             }
           }
 
           &.active > a span.chevron i {
-            transform: rotate(90deg);
+            transform: rotate(-90deg);
           }
 
           .sub-menu {
@@ -133,7 +129,6 @@
           }
         }
       }
-    }
   }
 
   &__footer {
