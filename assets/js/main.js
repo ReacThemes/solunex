@@ -56,6 +56,18 @@
       });
     },
     swiperActivation: function () {
+      $(document).ready(function(){
+        var swiper = new Swiper(".banner-slider-active", {
+          slidesPerView: 1,
+          speed: 1200,
+          effect: "fade",
+          autoplay: {
+            delay: 6000,
+            disableOnInteraction: false,
+          },
+          loop:true,
+        });
+      });
       $(document).ready(function () {
         // BRAND SLIDER
         var swiper = new Swiper('.brand__slider', {
@@ -465,4 +477,8 @@
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl);
   });
+  
+  $(window).on('load', function() {
+        jQuery('#de-loader').fadeOut(500);
+    });
 })(jQuery, window);

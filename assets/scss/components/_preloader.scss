@@ -16,10 +16,6 @@
   align-items: center;
 }
 
-.dark-scheme #de-loader{
-  background: var(--bg-dark-1);
-}
-
 .lds-roller {
   display: inline-block;
   position: relative;
@@ -39,7 +35,7 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--primary-color);
+  background: var(--rts-neon);
   margin: -2px 0 0 -2px;
 }
 
