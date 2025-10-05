@@ -29,13 +29,13 @@
 }
 
 .lds-roller div:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: var(--rts-neon);
+  background: var(--rts-heading);
   margin: -2px 0 0 -2px;
 }
 
