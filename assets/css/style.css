@@ -18844,6 +18844,8 @@ nav ul li a {
 }
 .rts__contact__form .rts__btn {
   width: 100%;
+  border: none;
+  background: none;
 }
 .rts__contact__form .rts__btn__wrap {
   width: 100%;
