@@ -106,6 +106,21 @@
     }
   }
   .banner__content {
+    .pre-title{
+      color: var(--rts-white);
+      font-weight: 500;
+      max-width: max-content;
+      display: inline-block;
+      padding: 9px 20px;
+      font-size: 18px;
+      font-family: var(--font-heading);
+      border: 1px solid var(--rts-white);
+      border-radius: 100px;
+      line-height: 1;
+      height: max-content;
+      width: max-content;
+      margin-bottom: 25px;
+    }
     h1 {
       color: var(--rts-white);
       font-size: 100px;
@@ -122,6 +137,11 @@
         font-size: 55px;
         letter-spacing: -2px;
       }
+    }
+    .desc{
+      color: var(--rts-white);
+      font-size: 18px;
+      padding-bottom: 20px;
     }
 
     .banner__btn {
@@ -406,7 +426,7 @@
       content: '';
       position: absolute;
       z-index: -1;
-      background: rgba( #000000, $alpha: .3);
+      background: rgba( #000000, $alpha: .35);
       inset: 0;
       width: 100%;
       height: 100%;
