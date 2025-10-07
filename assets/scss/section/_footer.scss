@@ -272,14 +272,16 @@
                               border-radius: 6px;
 
                               img {
-                                   width: 100%;
                                    transform: scale(1);
                                    transition: var(--transition);
                                    cursor: pointer;
-
+                                   @include mq($sm) {
+                                        width: 100%;
+                                   }
                                    &:hover {
                                         transform: scale(1.1);
                                    }
+
                               }
                          }
                     }

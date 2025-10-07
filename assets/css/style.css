@@ -18519,10 +18519,14 @@ nav ul li a {
   border-radius: 6px;
 }
 .rts__footer__area .footer__widget__item .single__item .gallery__item .thumb img {
-  width: 100%;
   transform: scale(1);
   transition: var(--transition);
   cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .rts__footer__area .footer__widget__item .single__item .gallery__item .thumb img {
+    width: 100%;
+  }
 }
 .rts__footer__area .footer__widget__item .single__item .gallery__item .thumb img:hover {
   transform: scale(1.1);
